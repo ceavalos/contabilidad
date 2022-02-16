@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {EmpresaService} from '../../servicios/empresa.service';
+import {Empresa} from '../../modelos/empresa'
 
 @Component({
   selector: 'app-empresa',
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EmpresaComponent implements OnInit {
 
-  constructor() { }
+  private empresas : Empresa[];
 
-  ngOnInit(): void {
+  constructor(private empresaService: EmpresaService ) { };
+
+
+  ngOnInit() {
+    this.getAll();
   }
+
+   getAll(): void{
+    this.empresas = this.empresaService.getAll();
+   }
 
 }

@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 import { EmpresaComponent } from './componentes/empresa/empresa.component';
 import { MenuComponent } from './componentes/menu/menu.component';
 import { LoginComponent } from './componentes/login/login.component';
+import { HomeComponent } from './componentes/home/home.component';
+import { CatalogoComponent } from './componentes/catalogo/catalogo.component';
+import { PartidasComponent } from './componentes/partidas/partidas.component';
 
 
 @NgModule({
@@ -13,7 +16,10 @@ import { LoginComponent } from './componentes/login/login.component';
     AppComponent,
     EmpresaComponent,
     MenuComponent,
-    LoginComponent
+    LoginComponent,
+    HomeComponent,
+    CatalogoComponent,
+    PartidasComponent
   ],
   imports: [
     BrowserModule,
